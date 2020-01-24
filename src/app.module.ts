@@ -7,6 +7,6 @@ import { BService } from './b/b.service';
 @Module({
   imports: [],
   controllers: [AppController],
-  providers: [AppService, BService],
+  providers: [AppService],
 })
 export class AppModule {}
