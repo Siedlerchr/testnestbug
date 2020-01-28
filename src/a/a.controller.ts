@@ -7,6 +7,14 @@ export class AController {
 
     constructor(private readonly aService: AService) { }
 
+
+    @Get('test')
+    public testTheSystem() {
+        return "Test";
+    }
+
+
+
     @Get()
     public insertMentionsIntoFiware() {
         this.aService.insertMentionsIntoFiware();
